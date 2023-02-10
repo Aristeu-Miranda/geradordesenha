@@ -1,8 +1,10 @@
 import React from 'react';
-import Main from './Components/main'
+import Container from './Components/container.jsx'
 
-export default () => {
-    return(
-        <Main/>
+export default function App() {
+    return (
+        <>
+            <Container/>
+        </>
     )
 }
