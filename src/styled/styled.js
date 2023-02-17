@@ -118,7 +118,8 @@ export const DivCampos = styled.div`
     width: 100%;
     height: 398px;
 }
-
+`
+export const DivContador = styled.div`
 .contador {
     display: flex;
     justify-content: space-around;
@@ -170,7 +171,9 @@ p {
     border-radius: 50%;
     cursor: pointer;
 }
+`
 
+export const DivFiltro = styled.div`
 form {
     padding-top: 30px;
     background-color: #282631;
@@ -202,7 +205,8 @@ label {
     vertical-align: top;
     margin-left: 10px;
 }
-
+`
+export const DivBotao = styled.div`
 .contorno-forca {
     padding: 30px 25px 0px 25px;
     background-color: #282631;
@@ -270,5 +274,4 @@ label {
     background-color: #70B075;
 }
 `
-
 
