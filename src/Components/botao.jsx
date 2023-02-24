@@ -3,10 +3,42 @@ import { DivBotao } from "../styled/styled";
 
 export default function Botao({ gerarSenha, algumCheckBoxSelecionado }) {
   
-  
-  
+  function forcaUm() {
+    
 
+    return algumCheckBoxSelecionado === true? 'fundo-verde':'valor-forca'
+  }
+
+  function forcaDois() {
+    if(algumCheckBoxSelecionado >= 2) {
+      return 'fundo-verde';
+    } 
+    else {
+      return 'valor-forca';
+    }
+  }
+
+  function forcaTres() {
+    if(algumCheckBoxSelecionado >= 3) {
+      return 'fundo-verde';
+    } 
+    else {
+      return 'valor-forca';
+    }
+  }
+
+  function forcaQuatro() {
+    if(algumCheckBoxSelecionado >= 4) {
+      return 'fundo-verde';
+    } 
+    else {
+      return 'valor-forca';
+    }
+  }
+  
   if(algumCheckBoxSelecionado > 0) console.log("Foi selecionado")
+
+
   return (
     <DivBotao>
       <div className="contorno-forca">
@@ -15,8 +47,10 @@ export default function Botao({ gerarSenha, algumCheckBoxSelecionado }) {
             <p>STRENGHT</p>
           </div>
           <div className="valores-forca">
-              <div className="valor-forca"></div>
-              
+              <div className={forcaUm()}></div>
+              <div className={forcaUm()}></div>
+              <div className={forcaTres()}></div>
+              <div className={forcaQuatro()}></div>
           </div>
         </div>
         <div className="generate">

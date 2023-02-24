@@ -249,6 +249,13 @@ export const DivBotao = styled.div`
     height: 17px;
 }
 
+.fundo-verde {
+    background-color: #ADFFB3;
+    border: 1px solid #fff;
+    width: 6px;
+    height: 17px;
+}
+
 .generate {
     width: 100%;
     height: 41px;
