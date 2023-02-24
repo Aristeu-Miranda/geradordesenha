@@ -118,6 +118,37 @@ export const DivCampos = styled.div`
     width: 100%;
     height: 398px;
 }
+form {
+    padding-top: 30px;
+    background-color: #282631;
+}
+
+form > div {
+    width: 100%;
+    background-color: #282631;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+form > div:last-of-type {
+    margin-bottom: 0px;
+}
+
+form > div > input {
+    width: 14px;
+    height: 14px;
+    accent-color: #282631;
+}
+
+label {
+    background-color: #282631;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.48px;
+    vertical-align: top;
+    margin-left: 10px;
+}
 `
 export const DivContador = styled.div`
 .contador {
@@ -173,39 +204,6 @@ p {
 }
 `
 
-export const DivFiltro = styled.div`
-form {
-    padding-top: 30px;
-    background-color: #282631;
-}
-
-form > div {
-    width: 100%;
-    background-color: #282631;
-    padding-left: 25px;
-    margin-bottom: 10px;
-}
-
-form > div:last-of-type {
-    margin-bottom: 0px;
-}
-
-form > div > input {
-    width: 14px;
-    height: 14px;
-    accent-color: #282631;
-}
-
-label {
-    background-color: #282631;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18.48px;
-    vertical-align: top;
-    margin-left: 10px;
-}
-`
 export const DivBotao = styled.div`
 .contorno-forca {
     padding: 30px 25px 0px 25px;
@@ -261,7 +259,7 @@ export const DivBotao = styled.div`
     width: 100%;
     height: 100%;
     border: none;
-    background-color: #ADFFB3;
+    background: #ADFFB3;
     font-size: 12px;
     font-weight: 700;
     line-height: 15.84px;
@@ -271,7 +269,7 @@ export const DivBotao = styled.div`
 }
 
 .generate > button:hover {
-    background-color: #70B075;
+    background: #70B075;
 }
 `
 
