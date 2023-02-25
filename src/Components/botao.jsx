@@ -1,7 +1,7 @@
 import React from "react";
 import { DivBotao } from "../styled/styled";
 
-export default function Botao({ gerarSenha, algumCheckBoxSelecionado }) {
+export default function Botao({ gerarSenha, algumCheckBoxSelecionado, disabled }) {
   
   function forcaUm() {
     
@@ -54,7 +54,7 @@ export default function Botao({ gerarSenha, algumCheckBoxSelecionado }) {
           </div>
         </div>
         <div className="generate">
-                <button type="button" onClick={gerarSenha}>GENERATE</button>
+                <button style={disabled ? {backgroundColor: 'gray'} : {}} type="button" onClick={gerarSenha} disabled={disabled}>GENERATE</button>
         </div>
       </div>
     </DivBotao>

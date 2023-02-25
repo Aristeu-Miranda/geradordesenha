@@ -9,7 +9,7 @@ export default function Campos(props) {
     const [caracteres, setCaracteres] = useState(0);
 
     //Validação dos checkbox
-    useEffect(() => {}, [filtroSelecionado]);
+    useEffect(() => {console.log(filtroSelecionado)}, [filtroSelecionado]);
     function checkBoxSelecionado(e) {
         const nomeBox = e.target.id;
         const estaSelecionado = e.target.checked;
@@ -100,7 +100,7 @@ export default function Campos(props) {
                         <label htmlFor="simbolos">Include Symbols</label>
                     </div>
                 </form>                
-                <Botao gerarSenha={gerarSenha} algumCheckBoxSelecionado={algumCheckBoxSelecionado}/>
+                <Botao gerarSenha={gerarSenha} algumCheckBoxSelecionado={algumCheckBoxSelecionado} disabled={!filtroSelecionado.length}/>
             </div>
         </DivCampos>
     )
